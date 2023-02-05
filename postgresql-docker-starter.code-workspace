@@ -1,0 +1,16 @@
+{
+    "folders": [
+        {
+            "path": "."
+        }
+    ],
+    "settings": {
+        // use postgres extension to run queries against connection
+        "files.associations": {
+            "*.sql": "postgres"
+        },
+        "[postgres]": {
+            "editor.defaultFormatter": "bradymholt.pgformatter"
+        },
+    }
+}
