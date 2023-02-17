@@ -14,6 +14,8 @@ psql -v ON_ERROR_STOP=1 --username "postgres" --dbname "postgres" <<-EOSQL
         TABLESPACE = pg_default
         CONNECTION LIMIT = -1
         IS_TEMPLATE = False;
+        
+    ALTER DATABASE $DB_NAME SET timezone TO 'UTC';
 
     REVOKE CONNECT ON DATABASE $DB_NAME FROM PUBLIC;
     GRANT  CONNECT ON DATABASE $DB_NAME  TO $DB_ADMIN_USER;
