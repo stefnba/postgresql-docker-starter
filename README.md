@@ -24,7 +24,7 @@ A database is created. This database is owned by the admin user and named based 
 To come.
 
 
-All of the above permissions are DEFAULT PRIVILEGES, meaning that they apply per default to all items within the specified schema.
+All of the above permissions are DEFAULT PRIVILEGES, meaning that they apply per default to all future items that are created going forward.
 
 # Setup
 
